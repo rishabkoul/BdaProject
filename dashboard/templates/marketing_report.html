@@ -61,23 +61,34 @@
             }
     },
     "slice": {
+        "reportFilters": [
+            {
+                "uniqueName": "Traffic"
+            }
+        ],
         "rows": [
             {
                 "uniqueName": "Country"
+            },
+            {
+                "uniqueName": "Source"
             }
         ],
         "columns": [
+        // {
+        //         "uniqueName": "Source"
+        //     },
             {
                 "uniqueName": "[Measures]"
             }
         ],
         "measures": [
             {
-                "uniqueName": "Leads",
+                "uniqueName": "Sales",
                 "aggregation": "sum"
             },
             {
-                "uniqueName": "Opportunities",
+                "uniqueName": "Clicks",
                 "aggregation": "sum"
             }
         ]
